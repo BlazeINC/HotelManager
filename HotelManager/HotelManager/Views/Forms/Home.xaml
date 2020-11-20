@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HotelManager.Views.Forms.Home" BackgroundColor="#343434">
+    <ContentPage.Content>
+
+<StackLayout>
+<!--  <Button Text="Hotel" TextColor="AntiqueWhite" HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand" ContentLayout=""
+                    ImageSource="https://q-cf.bstatic.com/images/hotel/max1024x768/211/211874461.jpg" />
+           
+    <ImageButton Source="https://q-cf.bstatic.com/images/hotel/max1024x768/211/211874461.jpg"  
+                         Aspect="AspectFill" 
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand" />
+    -->
+
+            <CarouselView x:Name="Carrusel" CurrentItem="Carrusel_ItemSelected">
+                <CarouselView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" />
+                </CarouselView.ItemsLayout>
+                <CarouselView.ItemTemplate>
+        <DataTemplate>
+                        <StackLayout>
+                            <Frame HasShadow="True"
+                       BorderColor="DarkGray"
+                       CornerRadius="5"
+                       Margin="20"
+                       HeightRequest="300"
+                       HorizontalOptions="Center"
+                       VerticalOptions="CenterAndExpand" BackgroundColor="#454747">
+                                <StackLayout>
+                                    <Label Text="{Binding Name}" TextColor="Snow"
+                               FontAttributes="Bold"
+                               FontSize="Large"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" />
+                                    <Image Source="{Binding ImageUrl}"
+                               Aspect="AspectFill"
+                               HeightRequest="150"
+                               WidthRequest="150"
+                               HorizontalOptions="Center" />
+            
+                              <Button x:Name="Boton" Text="Abrir" Clicked="Button_Clicked" BackgroundColor="#24A3F6" BorderColor="White" TextColor="White" />
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                    </DataTemplate>
+    </CarouselView.ItemTemplate>
+</CarouselView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

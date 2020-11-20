@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HotelManager.Models
 {
-    public class Reservacion
+   public class Reservacion
     {
 
 
@@ -21,7 +21,7 @@ namespace HotelManager.Models
             Room = 0;
             Estatus = 0;
             Entrada = DateTime.Now;
-            Salida = DateTime.Now.AddDays(1);
+           Salida = DateTime.Now.AddDays(1);
         }
 
 
@@ -29,17 +29,17 @@ namespace HotelManager.Models
 
         public bool ValidaReservacion()
         {
-            if (Estatus == 1)
+            if(Estatus ==1)
             {
-                if (Salida.Date < DateTime.Today && Entrada.Date > DateTime.Today)
-                {
-                    Estatus = 0;
-                    return false;
-                }
-                else
-                {
-                    return true;
-                }
+            if(Salida.Date<DateTime.Today && Entrada.Date>DateTime.Today)
+            {
+                Estatus = 0;
+                return false;
+            }
+            else
+            {
+                return true;
+            }
             }
             else
             {
@@ -48,4 +48,3 @@ namespace HotelManager.Models
         }
     }
 }
-

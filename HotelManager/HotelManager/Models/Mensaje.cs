@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HotelManager.Models
 {
-    class Mensaje
+    public class Mensaje
     {
         public string ID { get; set; }
         public string Msg { get; set; }
@@ -19,6 +19,7 @@ namespace HotelManager.Models
             IDHuesped = string.Empty;
             Estatus = 1;
         }
+
 
     }
 }

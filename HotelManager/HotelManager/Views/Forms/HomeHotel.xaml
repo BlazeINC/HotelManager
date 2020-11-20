@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HotelManager.Views.Forms.HomeHotel" BackgroundColor="#343434">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Image Source="https://media.istockphoto.com/vectors/hotel-building-line-outline-cartoon-style-vector-illustration-vector-id695901180"
+                    Aspect="AspectFit" Opacity="20" />
+            <CollectionView x:Name="Lista" SelectionMode="Single" SelectionChanged="Lista_SelectionChanged" >
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Spacing="1">
+                            <Label x:Name="Departamento" Text="{Binding .}"  Margin="2,2,2,2" FontSize="Medium" 
+                                   HorizontalTextAlignment="Center"
+               BackgroundColor="#3877FA" TextColor="White"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

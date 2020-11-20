@@ -1,4 +1,4 @@
-﻿using HotelManager.Models;
+using HotelManager.Models;
 using HotelManager.Views.Forms;
 using Microsoft.WindowsAzure.MobileServices;
 using System;
@@ -11,7 +11,7 @@ namespace HotelManager
     public partial class App : Application
     {
         public static string DatabaseLocation = string.Empty;
-        public static MobileServiceClient client = new MobileServiceClient("https://hotelmanagerwebapp.azurewebsites.net/%22);
+        public static MobileServiceClient client = new MobileServiceClient("https://hotelmanagerwebapp.azurewebsites.net");
         public static Usuarios sesion = new Usuarios();
         public static List<Reservacion> reservaciones = new List<Reservacion>();
         public static List<menus> ord = new List<menus>();
@@ -24,7 +24,6 @@ namespace HotelManager
             MainPage = new NavigationPage(new SimpleLoginPage());
         }
 
-      
         protected override void OnStart()
         {
         }

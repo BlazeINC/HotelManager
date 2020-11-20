@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HotelManager.Views.Forms.Menu" BackgroundColor="#343434">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Ordenar" Clicked="ToolbarItem_Clicked">
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        
+        <StackLayout>
+            <Label Text="Menu" FontSize="Large" TextColor="White"
+                HorizontalOptions="CenterAndExpand" />
+            
+<CollectionView x:Name="MenuLista" SelectionMode="Single" SelectionChanged="Menu_SelectionChanged" >
+    <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Spacing="2" Orientation="Vertical">
+                            <Image Source="{Binding Image}" Aspect="AspectFit" />
+                            <Label Text="{Binding Nombre}" FontSize="Medium" TextColor="White"/>
+                            <Label Text="{Binding Descripcion}" TextColor="White" />
+                           <Label x:Name="Precio" Text="{Binding Precio}" TextColor="Green"/>
+                        </StackLayout>
+                    </DataTemplate>
+    </CollectionView.ItemTemplate>
+</CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

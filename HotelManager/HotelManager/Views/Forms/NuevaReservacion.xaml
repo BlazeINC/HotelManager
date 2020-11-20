@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HotelManager.Views.Forms.NuevaReservacion" BackgroundColor="#343434">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Nueva reservación" HorizontalOptions="CenterAndExpand" TextColor="White" />
+            <Entry Placeholder="Nombre" x:Name="Nombre" TextColor="White" PlaceholderColor="White" />
+            <Entry Placeholder="Email" x:Name="Email" TextColor="White" PlaceholderColor="White"/>
+            <Entry Placeholder="Cuarto" x:Name="Cuarto" TextColor="White" PlaceholderColor="White" />
+            <DatePicker x:Name="Entrada" TextColor="White"/>
+            <DatePicker x:Name="Salida" TextColor="White"/>
+
+            <Button Text="Confirmar Nueva reservación" x:Name="confirmar" Clicked="confirmar_Clicked" BackgroundColor="Aqua" TextColor="White"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

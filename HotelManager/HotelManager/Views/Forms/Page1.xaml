@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HotelManager.Views.Forms.Page1" BackgroundColor="#343434">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Limpieza" TextColor="DarkCyan" FontSize="Title"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" />
+            
+<CollectionView x:Name="Lista" SelectionMode="Single" SelectionChanged="Lista_SelectionChanged" >
+          <!--      <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" />
+                </CollectionView.ItemsLayout> -->
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Spacing="3">
+       <Label x:Name="Cosa" Text="{Binding Atriculo}"  Margin="5" FontSize="Medium"
+               BackgroundColor="DarkTurquoise" HorizontalTextAlignment="Center" TextColor="White"/>
+                        </StackLayout>
+             </DataTemplate>
+    </CollectionView.ItemTemplate>
+</CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

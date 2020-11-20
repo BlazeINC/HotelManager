@@ -19,16 +19,16 @@ namespace HotelManager
         {
             InitializeComponent();
         }
-
+       
         private void BtnLogin_Clicked(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(TextUsuario.Text) || string.IsNullOrEmpty(TextUsuario.Text))
+            if(string.IsNullOrEmpty(TextUsuario.Text) || string.IsNullOrEmpty(TextUsuario.Text))
             {
 
             }
             else
             {
-
+              
             }
         }
     }

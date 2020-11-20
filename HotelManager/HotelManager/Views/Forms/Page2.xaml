@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HotelManager.Views.Forms.Page2">
+    <ContentPage.Content>
+        <StackLayout>
+
+<CarouselView x:Name="Lista">
+                <CarouselView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Horizontal" />
+                </CarouselView.ItemsLayout>
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame HasShadow="True"
+                       BorderColor="DarkGray"
+                       CornerRadius="30"
+                       Margin="20"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center" BackgroundColor="DarkGray">
+                            <StackLayout>
+                                <Label Text="Reservación: Cuarto,Entrada,Salida" TextColor="White" FontSize="Medium" />
+                                <Label x:Name="Cuarto" Text="{Binding Room}" TextColor="White" />
+                                <Label x:Name="Entrada" Text="{Binding Entrada}" TextColor="White" />
+                                <Label x:Name="Salida" Text="{Binding Salida}" TextColor="White" />
+                        </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+    </CarouselView.ItemTemplate>
+</CarouselView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
