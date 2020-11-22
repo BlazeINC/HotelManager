@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="HotelManager.Views.Forms.Home" BackgroundColor="#343434">
+             x:Class="HotelManager.Views.Forms.Home" BackgroundColor="White">
     <ContentPage.Content>
 
 <StackLayout>
@@ -20,20 +20,20 @@
 
             <CarouselView x:Name="Carrusel" CurrentItem="Carrusel_ItemSelected">
                 <CarouselView.ItemsLayout>
-                    <LinearItemsLayout Orientation="Vertical" />
+                    <LinearItemsLayout Orientation="Vertical"  />
                 </CarouselView.ItemsLayout>
                 <CarouselView.ItemTemplate>
         <DataTemplate>
                         <StackLayout>
                             <Frame HasShadow="True"
-                       BorderColor="DarkGray"
+                       BorderColor="GhostWhite"
                        CornerRadius="5"
                        Margin="20"
                        HeightRequest="300"
                        HorizontalOptions="Center"
-                       VerticalOptions="CenterAndExpand" BackgroundColor="#454747">
+                       VerticalOptions="Center" BackgroundColor="GhostWhite">
                                 <StackLayout>
-                                    <Label Text="{Binding Name}" TextColor="Snow"
+                                    <Label Text="{Binding Name}" TextColor="Black"
                                FontAttributes="Bold"
                                FontSize="Large"
                                HorizontalOptions="Center"

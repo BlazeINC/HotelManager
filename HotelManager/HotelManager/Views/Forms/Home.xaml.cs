@@ -23,8 +23,9 @@ namespace HotelManager.Views.Forms
              Botones nuevo = new Botones
             {
                 Name = "Hotel",
-                ImageUrl = "https://q-cf.bstatic.com/images/hotel/max1024x768/211/211874461.jpg"
-            };
+                ImageUrl = "https://www.flaticon.es/svg/static/icons/svg/3168/3168603.svg"
+                 //https://q-cf.bstatic.com/images/hotel/max1024x768/211/211874461.jpg
+             };
             Botones nuevo2 = new Botones
             {
                 Name = "Alberca",
