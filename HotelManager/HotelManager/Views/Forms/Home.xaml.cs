@@ -13,19 +13,23 @@ namespace HotelManager.Views.Forms
     public class Botones
     {
         public string Name { get; set; }
-        public string ImageUrl { get; set; }
+        public ImageSource ImageUrl { get; set; }
+
+        
     }
 
     public partial class Home : ContentPage
     {
         public Home()
         {
-             Botones nuevo = new Botones
+            
+            var assembly = typeof(Home);
+            Botones nuevo = new Botones
             {
                 Name = "Hotel",
-                ImageUrl = "https://www.flaticon.es/svg/static/icons/svg/3168/3168603.svg"
-                 //https://q-cf.bstatic.com/images/hotel/max1024x768/211/211874461.jpg
-             };
+                ImageUrl = "https://image.flaticon.com/icons/png/512/1837/1837476.png"
+                //https://q-cf.bstatic.com/images/hotel/max1024x768/211/211874461.jpg
+            };
             Botones nuevo2 = new Botones
             {
                 Name = "Alberca",
@@ -52,6 +56,7 @@ namespace HotelManager.Views.Forms
                 nuevo,nuevo2,nuevo3,nuevo4,nuevo5
             };          
             Carrusel.ItemsSource = bot;
+            
         }
         public void Carrusel_ItemSelected (object sender, SelectedItemChangedEventArgs e)
         {
