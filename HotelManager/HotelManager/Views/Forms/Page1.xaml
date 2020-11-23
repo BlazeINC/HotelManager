@@ -4,14 +4,15 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="HotelManager.Views.Forms.Page1" BackgroundColor="#343434">
+             x:Class="HotelManager.Views.Forms.Page1" BackgroundColor="White">
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Limpieza" TextColor="DarkCyan" FontSize="Title"
                 VerticalOptions="Start" 
                 HorizontalOptions="CenterAndExpand" />
-            
-<CollectionView x:Name="Lista" SelectionMode="Single" SelectionChanged="Lista_SelectionChanged" >
+            <Image x:Name="imglimpieza" Aspect="AspectFill" HorizontalOptions="Center" />
+
+            <CollectionView x:Name="Lista" SelectionMode="Single" SelectionChanged="Lista_SelectionChanged" >
           <!--      <CollectionView.ItemsLayout>
                     <LinearItemsLayout Orientation="Vertical" />
                 </CollectionView.ItemsLayout> -->

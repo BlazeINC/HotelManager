@@ -26,7 +26,7 @@ namespace HotelManager.Views.Forms
             var assembly = typeof(Home);
             Botones nuevo = new Botones
             {
-                Name = "Hotel",
+                Name = "Limpieza",
                 ImageUrl = "https://image.flaticon.com/icons/png/512/1837/1837476.png"
                 //https://q-cf.bstatic.com/images/hotel/max1024x768/211/211874461.jpg
             };
@@ -69,7 +69,7 @@ namespace HotelManager.Views.Forms
             Botones u = Carrusel.CurrentItem as Botones;
             switch(u.Name)
             {
-                case "Hotel": Navigation.PushAsync(new Page1()); break;
+                case "Limpieza": Navigation.PushAsync(new Page1()); break;
                 case "Alberca": Navigation.PushAsync(new Alberca()); break;
                 case "Menu": Navigation.PushAsync(new Menu()); break;
                 case "Instalaciones": Navigation.PushAsync(new Gym()); break;

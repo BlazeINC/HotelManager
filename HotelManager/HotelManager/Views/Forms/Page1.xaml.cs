@@ -42,7 +42,8 @@ namespace HotelManager.Views.Forms
             {
                 Toallas,Sabanas,Pillow
             };
-             
+            var assembly = typeof(Page1);
+            imglimpieza.Source = "https://image.freepik.com/vector-gratis/diseno-ilustracion-iconos-herramientas-productos-limpieza_18591-65317.jpg";
             Lista.ItemsSource = Clean;
             
         }
