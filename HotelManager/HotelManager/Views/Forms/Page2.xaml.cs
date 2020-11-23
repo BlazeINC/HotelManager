@@ -16,6 +16,8 @@ namespace HotelManager.Views.Forms
         {
             InitializeComponent();
             Lista.ItemsSource = App.reservaciones;
+            var assembly = typeof(Page2);
+            ImagenRes.Source = ImageSource.FromResource("HotelManager.Assets.img.logo_Azul.png", assembly);
         }
     }
 }

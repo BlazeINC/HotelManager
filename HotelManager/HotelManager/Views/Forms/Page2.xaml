@@ -7,7 +7,9 @@
              x:Class="HotelManager.Views.Forms.Page2">
     <ContentPage.Content>
         <StackLayout>
-
+            <Image x:Name="ImagenRes" Aspect="AspectFit" HeightRequest="100" WidthRequest="100" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
+            <ScrollView>
+                
 <CarouselView x:Name="Lista">
                 <CarouselView.ItemsLayout>
                     <LinearItemsLayout Orientation="Horizontal" />
@@ -15,21 +17,25 @@
                 <CarouselView.ItemTemplate>
                     <DataTemplate>
                         <Frame HasShadow="True"
-                       BorderColor="DarkGray"
                        CornerRadius="30"
+                               HeightRequest="100"
                        Margin="20"
                        HorizontalOptions="Center"
-                       VerticalOptions="Center" BackgroundColor="DarkGray">
+                       VerticalOptions="CenterAndExpand" BackgroundColor="GhostWhite">
                             <StackLayout>
-                                <Label Text="Reservación: Cuarto,Entrada,Salida" TextColor="White" FontSize="Medium" />
-                                <Label x:Name="Cuarto" Text="{Binding Room}" TextColor="White" />
-                                <Label x:Name="Entrada" Text="{Binding Entrada}" TextColor="White" />
-                                <Label x:Name="Salida" Text="{Binding Salida}" TextColor="White" />
+                                <Label Text="Detalles de la Estadía" TextColor="Black" FontSize="Medium" />
+                                <Label Text="Cuarto" TextColor="DarkTurquoise" FontSize="Medium"/>
+                                <Label x:Name="Cuarto" Text="{Binding Room}" TextColor="Black" />
+                                <Label Text="Entrada" TextColor="DarkTurquoise" FontSize="Medium" />
+                                <Label x:Name="Entrada" Text="{Binding Entrada}" TextColor="Black" />
+                                <Label Text="Salida" TextColor="DarkTurquoise" FontSize="Medium" />
+                                <Label x:Name="Salida" Text="{Binding Salida}" TextColor="Black" />
                         </StackLayout>
                         </Frame>
                     </DataTemplate>
     </CarouselView.ItemTemplate>
 </CarouselView>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
