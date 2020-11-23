@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="HotelManager.Views.Forms.Menu" BackgroundColor="#343434">
+             x:Class="HotelManager.Views.Forms.Menu" BackgroundColor="White">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Ordenar" Clicked="ToolbarItem_Clicked">
         </ToolbarItem>
@@ -12,7 +12,7 @@
     <ContentPage.Content>
         
         <StackLayout>
-            <Label Text="Menu" FontSize="Large" TextColor="White"
+            <Label Text="Menu" FontSize="Large" TextColor="Black"
                 HorizontalOptions="CenterAndExpand" />
             
 <CollectionView x:Name="MenuLista" SelectionMode="Single" SelectionChanged="Menu_SelectionChanged" >
@@ -20,8 +20,8 @@
                     <DataTemplate>
                         <StackLayout Spacing="2" Orientation="Vertical">
                             <Image Source="{Binding Image}" Aspect="AspectFit" />
-                            <Label Text="{Binding Nombre}" FontSize="Medium" TextColor="White"/>
-                            <Label Text="{Binding Descripcion}" TextColor="White" />
+                            <Label Text="{Binding Nombre}" FontSize="Medium" TextColor="Black"/>
+                            <Label Text="{Binding Descripcion}" TextColor="Black" />
                            <Label x:Name="Precio" Text="{Binding Precio}" TextColor="Green"/>
                         </StackLayout>
                     </DataTemplate>

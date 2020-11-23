@@ -10,7 +10,7 @@
             <Label Text="Limpieza" TextColor="DarkCyan" FontSize="Title"
                 VerticalOptions="Start" 
                 HorizontalOptions="CenterAndExpand" />
-            <Image x:Name="imglimpieza" Aspect="AspectFill" HorizontalOptions="Center" />
+            <Image x:Name="imglimpieza" Aspect="AspectFill" HorizontalOptions="FillAndExpand" />
 
             <CollectionView x:Name="Lista" SelectionMode="Single" SelectionChanged="Lista_SelectionChanged" >
           <!--      <CollectionView.ItemsLayout>
