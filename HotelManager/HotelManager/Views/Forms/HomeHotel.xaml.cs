@@ -20,6 +20,8 @@ namespace HotelManager.Views.Forms
 
             InitializeComponent();
             Lista.ItemsSource = depa;
+           var assembly = typeof(HomeHotel);
+           imgrecepcion.Source = ImageSource.FromResource("HotelManager.Assets.img.recepcionista.png", assembly);
             UpdateChildrenLayout();
         }
 

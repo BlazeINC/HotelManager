@@ -60,8 +60,7 @@
                         <RowDefinition Height="Auto" />
                     </Grid.RowDefinitions>
 
-                    <Image x:Name="imglogo" Aspect="AspectFit" HeightRequest="50" WidthRequest="50" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
-
+                    
                     <!--  Label to display the title of this page  -->
                     <Label
                         FontFamily="{StaticResource Montserrat-SemiBold}"
@@ -70,6 +69,8 @@
                         Style="{StaticResource LabelStyle}"
                         Text="Hotel Manager"
                         TextColor="{DynamicResource Gray-900}" />
+                    
+<Image x:Name="imglogo" Margin="15,45,15,5" Aspect="AspectFit" HeightRequest="50" WidthRequest="50" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
 
                     <!--  Label to display the description of this page  -->
                   <!--
