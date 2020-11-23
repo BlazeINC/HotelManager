@@ -27,7 +27,7 @@ namespace HotelManager.Views.Forms
             Botones nuevo = new Botones
             {
                 Name = "Limpieza",
-                ImageUrl = "https://image.flaticon.com/icons/png/512/1837/1837476.png"
+                ImageUrl = ImageSource.FromResource("HotelManager.Assets.img.limpieza_1.png", assembly)
                 //https://q-cf.bstatic.com/images/hotel/max1024x768/211/211874461.jpg
             };
             /*Botones nuevo2 = new Botones

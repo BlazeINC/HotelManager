@@ -60,6 +60,8 @@
                         <RowDefinition Height="Auto" />
                     </Grid.RowDefinitions>
 
+                    <Image x:Name="imglogo" Aspect="AspectFit" HeightRequest="50" WidthRequest="50" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+
                     <!--  Label to display the title of this page  -->
                     <Label
                         FontFamily="{StaticResource Montserrat-SemiBold}"
@@ -70,6 +72,8 @@
                         TextColor="{DynamicResource Gray-900}" />
 
                     <!--  Label to display the description of this page  -->
+                  <!--
+                   
                     <Label
                         Grid.Row="1"
                         Margin="0,8"
@@ -77,7 +81,7 @@
                         HorizontalTextAlignment="Center"
                         Style="{StaticResource LabelStyle}"
                         Text="Login"
-                        TextColor="{DynamicResource Gray-800}" />
+                        TextColor="{DynamicResource Gray-800}" /> -->
 
                     <!--  Entry to get email ID from user  -->
                     <local:SimpleEmailEntry x:Name="email" Grid.Row="2" Padding="0,24" />

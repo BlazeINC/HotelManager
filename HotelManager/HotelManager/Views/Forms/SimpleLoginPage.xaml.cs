@@ -2,6 +2,7 @@
 using HotelManager.Models;
 using System;
 using System.Linq;
+using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 using Xamarin.Forms.Xaml;
 
@@ -23,6 +24,8 @@ namespace HotelManager.Views.Forms
             App.ord.Clear();
             App.reservaciones.Clear();
             App.sesion = null;
+            var assembly = typeof(SimpleLoginPage);
+            imglogo.Source = ImageSource.FromResource("HotelManager.Assets.img.logo_Azul.png", assembly);
         }
 
         private void SfButton_Clicked(object sender, System.EventArgs e)

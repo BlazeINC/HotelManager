@@ -4,13 +4,20 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="HotelManager.Views.Forms.Gym" BackgroundColor="#343434">
+             x:Class="HotelManager.Views.Forms.Gym" BackgroundColor="White">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout>
-            <Image Aspect="AspectFit" Source="https://lifefitness.es/sites/g/files/dtv376/f/image/cta_background_image/maquinas-gimnasio-life-fitness.jpg" />
-            <Label Text="Gimnasio" TextColor="White" FontSize="Medium" />
-            <Label TextColor="White" Text="Nuestro gimnasio te ofrece un lugar donde puedas mantener tu forma, aun de viaje, que puedas seguir tu rutina de ejercicios con los mejores aparatos posibles" />
+            <Image Aspect="AspectFit" Source="https://www.ecestaticos.com/image/clipping/2c234ffc7d5e42ec34c58db3c6ff5e4a/los-gimnasios-estan-petados-la-industria-de-los-2-000-millones-que-se-aprovecha-de-ti.jpg" />
+            <Label Text="Gimnasio" TextColor="DarkTurquoise" FontSize="Medium" />
+            <Label TextColor="Black" Text="Nuestro gimnasio te ofrece un lugar donde puedas mantener tu forma, aun de viaje, que puedas seguir tu rutina de ejercicios con los mejores aparatos posibles" />
             <Label Text="Abierto de 4 am a 12 pm todos los dias" TextColor="Aqua" />
-        </StackLayout>
+                <Image Aspect="AspectFit" Source="https://cf.bstatic.com/images/hotel/max1024x768/146/146873866.jpg" />
+            <Label Text="Alberca" TextColor="DarkTurquoise" FontSize="Medium" />
+            <Label TextColor="Black" Text="Nuestro gimnasio te ofrece un lugar donde puedas mantener tu forma, aun de viaje, que puedas seguir tu rutina de ejercicios con los mejores aparatos posibles" />
+            <Label Text="Abierto de 4 am a 12 pm todos los dias" TextColor="Aqua" />
+        </StackLayout>            
+        </ScrollView>
+
     </ContentPage.Content>
 </ContentPage>
