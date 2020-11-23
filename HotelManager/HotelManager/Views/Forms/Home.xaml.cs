@@ -30,30 +30,30 @@ namespace HotelManager.Views.Forms
                 ImageUrl = "https://image.flaticon.com/icons/png/512/1837/1837476.png"
                 //https://q-cf.bstatic.com/images/hotel/max1024x768/211/211874461.jpg
             };
-            Botones nuevo2 = new Botones
+            /*Botones nuevo2 = new Botones
             {
                 Name = "Alberca",
                 ImageUrl = "https://r-cf.bstatic.com/images/hotel/max1024x768/182/182033193.jpg"
-            };
+            };*/
             Botones nuevo3 = new Botones
             {
                 Name = "Menu",
-                ImageUrl = "https://sevilla.abc.es/gurme/wp-content/uploads/sites/24/2012/01/comida-rapida-casera.jpg"
+                ImageUrl = "https://cdn.icon-icons.com/icons2/1774/PNG/512/019plate1_114171.png"
             };
             Botones nuevo4 = new Botones
             {
-                Name = "Gimnasio",
-                ImageUrl = "https://img.freepik.com/foto-gratis/equipos-gimnasio-gimnasio_23-2147949744.jpg?size=626&ext=jpg"
+                Name = "Instalaciones",
+                ImageUrl = "https://png.pngtree.com/png-vector/20190121/ourlarge/pngtree-vector-swimming-pool-icon-png-image_333406.jpg"
             };
             Botones nuevo5 = new Botones
             {
-                Name = "Reservación",
-                ImageUrl = "https://www.eluniversal.com.mx/sites/default/files/styles/f03-651x400/public/2017/11/15/hoteles_secretos_destinos.jpg?itok=OlJp51eq&c=7dc3660e9a184118fe4e88cb2c9f789a"
+                Name = "Mi Cuenta",
+                ImageUrl = "https://pngimage.net/wp-content/uploads/2018/05/atencion-al-cliente-icono-png-8.png"
             };
             InitializeComponent();
             var bot = new List<Botones>
             {
-                nuevo,nuevo2,nuevo3,nuevo4,nuevo5
+                nuevo,nuevo3,nuevo4,nuevo5
             };          
             Carrusel.ItemsSource = bot;
             
@@ -72,8 +72,8 @@ namespace HotelManager.Views.Forms
                 case "Hotel": Navigation.PushAsync(new Page1()); break;
                 case "Alberca": Navigation.PushAsync(new Alberca()); break;
                 case "Menu": Navigation.PushAsync(new Menu()); break;
-                case "Gimnasio": Navigation.PushAsync(new Gym()); break;
-                case "Reservación": Navigation.PushAsync(new Page2()); break;
+                case "Instalaciones": Navigation.PushAsync(new Gym()); break;
+                case "Mi Cuenta": Navigation.PushAsync(new Page2()); break;
             }
                 
         }
