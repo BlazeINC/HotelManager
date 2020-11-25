@@ -7,10 +7,9 @@
              x:Class="HotelManager.Views.Forms.DepartamentoMsg" BackgroundColor="White">
     <ContentPage.Content>
         <StackLayout>
-            
-<Button Text="Confirmar Reservación" BackgroundColor="Cyan" TextColor="White" x:Name="Boton" Clicked="Boton_Clicked" />
-      
-<Label Text="Pedidos" FontSize="Medium" HorizontalTextAlignment="Center" TextColor="DarkTurquoise" />
+            <Image x:Name="imgdepa" Aspect="AspectFit" HeightRequest="50" WidthRequest="50" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
+            <Button Text="Confirmar Reservación" BackgroundColor="Cyan" TextColor="White" x:Name="Boton" Clicked="Boton_Clicked" />
+            <Label Text="Pedidos" FontSize="Medium" HorizontalTextAlignment="Center" TextColor="DarkTurquoise" />
             <CollectionView x:Name="Lista" SelectionMode="Single" SelectionChanged="Lista_SelectionChanged">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>

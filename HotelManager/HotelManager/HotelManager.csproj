@@ -13,6 +13,7 @@
   <ItemGroup>
     <None Remove="Assets\img\herramientas-de-limpieza.png" />
     <None Remove="Assets\img\limpieza_1.png" />
+    <None Remove="Assets\img\llave-de-hotel.png" />
     <None Remove="Assets\img\logo_Azul.png" />
     <None Remove="Assets\img\recepcionista.png" />
   </ItemGroup>
@@ -20,6 +21,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Assets\img\herramientas-de-limpieza.png" />
     <EmbeddedResource Include="Assets\img\limpieza_1.png" />
+    <EmbeddedResource Include="Assets\img\llave-de-hotel.png" />
     <EmbeddedResource Include="Assets\img\logo_Azul.png" />
     <EmbeddedResource Include="Assets\img\recepcionista.png" />
   </ItemGroup>

@@ -21,10 +21,26 @@ namespace HotelManager.Views.Forms
             InitializeComponent();
              Boton.IsEnabled = false;
             Boton.IsVisible = false;
+            var assembly = typeof(DepartamentoMsg);
             if(depa == 3)
             {
+                imgdepa.Source = ImageSource.FromResource("HotelManager.Assets.img.llave-de-hotel.png", assembly);
                 Boton.IsVisible = true;
                 Boton.IsEnabled = true;
+            }
+            else
+            {
+                if(depa==1)
+                    {
+                    imgdepa.Source = ImageSource.FromResource("HotelManager.Assets.img.limpieza_1.png", assembly);
+                }
+                else
+                {
+                    if(depa==2)
+                    {
+                        imgdepa.Source = "https://cdn.icon-icons.com/icons2/1774/PNG/512/019plate1_114171.png";
+                    }
+                }
             }
             Lista.ItemsSource = msg;
             Initi();

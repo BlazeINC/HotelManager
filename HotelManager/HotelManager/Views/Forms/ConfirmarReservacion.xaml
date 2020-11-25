@@ -20,7 +20,7 @@
                         <StackLayout Spacing="1">
                             <Label x:Name="ReservacionesCliente" Text="{Binding Entrada}"  Margin="2,2,2,2" FontSize="Medium" 
                                    HorizontalTextAlignment="Center"
-               BackgroundColor="Coral" TextColor="White"/>
+               BackgroundColor="DarkTurquoise" TextColor="White"/>
                         </StackLayout>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
