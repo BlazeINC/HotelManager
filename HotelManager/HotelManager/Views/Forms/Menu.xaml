@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="HotelManager.Views.Forms.Menu" BackgroundColor="White">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Ordenar" Clicked="ToolbarItem_Clicked">
+        <ToolbarItem Text="Ordenar"  Clicked="ToolbarItem_Clicked">
         </ToolbarItem>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>

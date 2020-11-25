@@ -11,9 +11,11 @@ using Xamarin.Forms.Xaml;
 namespace HotelManager.Views.Forms
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
+
     public partial class DepartamentoMsg : ContentPage
-    {
-         List<Mensaje> msg = new List<Mensaje>();
+    { 
+
+        List<Mensaje> msg = new List<Mensaje>();
         int de;
         public  DepartamentoMsg(int depa)
         {
@@ -27,6 +29,7 @@ namespace HotelManager.Views.Forms
                 imgdepa.Source = ImageSource.FromResource("HotelManager.Assets.img.llave-de-hotel.png", assembly);
                 Boton.IsVisible = true;
                 Boton.IsEnabled = true;
+                
             }
             else
             {
@@ -45,6 +48,15 @@ namespace HotelManager.Views.Forms
             Lista.ItemsSource = msg;
             Initi();
             UpdateChildrenLayout();
+        }   
+        override protected void OnAppearing()
+        {
+            switch(de)
+            {
+                case 1: Title = "Limpieza"; break;
+                case 2: Title = "Restaurante"; break;
+                case 3: Title = "Recepción"; break;
+            }
         }
         public async void Initi()
         {
