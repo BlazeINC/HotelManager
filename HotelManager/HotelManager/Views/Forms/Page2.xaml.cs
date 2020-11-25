@@ -22,7 +22,7 @@ namespace HotelManager.Views.Forms
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            Device.OpenUri(new System.Uri("https://www.xamarinhelp.com/hyperlink-in-xamarin-forms-label/"));
+            Device.OpenUri(new System.Uri("https://docs.google.com/forms/d/e/1FAIpQLSdyagoELdpIcNIlDb_w-ln_ySdvqyTumniEP2QbmmT5nyoH5w/viewform?usp=sf_link"));
         }
     }
 }
