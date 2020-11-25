@@ -9,33 +9,34 @@
         <StackLayout>
             <Image x:Name="ImagenRes" Aspect="AspectFit" HeightRequest="100" WidthRequest="100" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
             <ScrollView>
-                
-<CarouselView x:Name="Lista">
-                <CarouselView.ItemsLayout>
-                    <LinearItemsLayout Orientation="Horizontal" />
-                </CarouselView.ItemsLayout>
-                <CarouselView.ItemTemplate>
-                    <DataTemplate>
-                        <Frame HasShadow="True"
+
+                <CarouselView x:Name="Lista">
+                    <CarouselView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Horizontal" />
+                    </CarouselView.ItemsLayout>
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame HasShadow="True"
                        CornerRadius="30"
                                HeightRequest="100"
                        Margin="20"
                        HorizontalOptions="Center"
                        VerticalOptions="CenterAndExpand" BackgroundColor="GhostWhite">
-                            <StackLayout>
-                                <Label Text="Detalles de la Estadía" TextColor="Black" FontSize="Medium" />
-                                <Label Text="Cuarto" TextColor="DarkTurquoise" FontSize="Medium"/>
-                                <Label x:Name="Cuarto" Text="{Binding Room}" TextColor="Black" />
-                                <Label Text="Entrada" TextColor="DarkTurquoise" FontSize="Medium" />
-                                <Label x:Name="Entrada" Text="{Binding Entrada}" TextColor="Black" />
-                                <Label Text="Salida" TextColor="DarkTurquoise" FontSize="Medium" />
-                                <Label x:Name="Salida" Text="{Binding Salida}" TextColor="Black" />
-                        </StackLayout>
-                        </Frame>
-                    </DataTemplate>
-    </CarouselView.ItemTemplate>
-</CarouselView>
+                                <StackLayout>
+                                    <Label Text="Detalles de la Estadía" TextColor="Black" FontSize="Medium" />
+                                    <Label Text="Cuarto" TextColor="DarkTurquoise" FontSize="Medium"/>
+                                    <Label x:Name="Cuarto" Text="{Binding Room}" TextColor="Black" />
+                                    <Label Text="Entrada" TextColor="DarkTurquoise" FontSize="Medium" />
+                                    <Label x:Name="Entrada" Text="{Binding Entrada}" TextColor="Black" />
+                                    <Label Text="Salida" TextColor="DarkTurquoise" FontSize="Medium" />
+                                    <Label x:Name="Salida" Text="{Binding Salida}" TextColor="Black" />
+                                </StackLayout>
+                            </Frame>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
             </ScrollView>
+            <Button Text="Calificanos" Clicked="Button_Clicked" BackgroundColor="White" BorderColor="White" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

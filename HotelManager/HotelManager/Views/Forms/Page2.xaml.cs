@@ -19,5 +19,10 @@ namespace HotelManager.Views.Forms
             var assembly = typeof(Page2);
             ImagenRes.Source = ImageSource.FromResource("HotelManager.Assets.img.logo_Azul.png", assembly);
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            Device.OpenUri(new System.Uri("https://www.xamarinhelp.com/hyperlink-in-xamarin-forms-label/"));
+        }
     }
 }
