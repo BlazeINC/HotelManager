@@ -4,13 +4,13 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="HotelManager.Views.Forms.ConfirmarReservacion" BackgroundColor="#343434">
+             x:Class="HotelManager.Views.Forms.ConfirmarReservacion" BackgroundColor="White">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" >
 
-            <Entry Placeholder="Nombre" x:Name="Nombre" TextColor="White" PlaceholderColor="White" />
+            <Entry Placeholder="Nombre" x:Name="Nombre" TextColor="Black" PlaceholderColor="Black" />
 
-            <Entry Placeholder="Email" x:Name="Email" TextColor="White" PlaceholderColor="White"/>
+            <Entry Placeholder="Email" x:Name="Email" TextColor="Black" PlaceholderColor="Black"/>
             
 <Button Text="Buscar Reservaciones" x:Name="Buscar" BackgroundColor="Aqua" Clicked="Buscar_Clicked" Margin="5,5,5,5"
         BorderColor="DimGray" BorderWidth="2"/>

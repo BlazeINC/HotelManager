@@ -4,13 +4,13 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="HotelManager.Views.Forms.DepartamentoMsg" BackgroundColor="#343434">
+             x:Class="HotelManager.Views.Forms.DepartamentoMsg" BackgroundColor="White">
     <ContentPage.Content>
         <StackLayout>
             
 <Button Text="Confirmar Reservación" BackgroundColor="Cyan" TextColor="White" x:Name="Boton" Clicked="Boton_Clicked" />
       
-<Label Text="Pedidos" FontSize="Medium" HorizontalTextAlignment="Center" TextColor="White" />
+<Label Text="Pedidos" FontSize="Medium" HorizontalTextAlignment="Center" TextColor="DarkTurquoise" />
             <CollectionView x:Name="Lista" SelectionMode="Single" SelectionChanged="Lista_SelectionChanged">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
