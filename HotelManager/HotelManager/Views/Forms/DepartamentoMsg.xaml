@@ -10,14 +10,14 @@
 
         <StackLayout>
             <Image x:Name="imgdepa" Aspect="AspectFit" HeightRequest="50" WidthRequest="50" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
-            <Button Text="Confirmar Reservación" BackgroundColor="Cyan" TextColor="White" x:Name="Boton" Clicked="Boton_Clicked" />
+            <Button Text="Confirmar Reservación" BackgroundColor="#24A3F6" TextColor="White" x:Name="Boton" Clicked="Boton_Clicked" />
             <Label Text="Pedidos" FontSize="Medium" HorizontalTextAlignment="Center" TextColor="DarkTurquoise" />
             <CollectionView x:Name="Lista" SelectionMode="Single" SelectionChanged="Lista_SelectionChanged">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         
 <StackLayout Spacing="2" Orientation="Vertical">
-              <Label Margin="2,2,2,2" Text="{Binding Msg}" BackgroundColor="DarkTurquoise" TextColor="White" FontSize="Medium" LineBreakMode="CharacterWrap"/>
+                            <Label Margin="2,2,2,2" Text="{Binding Msg}" BackgroundColor="#24A3F6" TextColor="White" FontSize="Medium" LineBreakMode="CharacterWrap"/>
 </StackLayout>
               
         </DataTemplate>

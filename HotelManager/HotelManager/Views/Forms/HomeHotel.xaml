@@ -16,7 +16,7 @@
                         <StackLayout Spacing="1">
                             <Label x:Name="Departamento" Text="{Binding .}"  Margin="2,2,2,2" FontSize="Medium" 
                                    HorizontalTextAlignment="Center"
-               BackgroundColor="DarkTurquoise" TextColor="White"/>
+               BackgroundColor="#24A3F6" TextColor="White"/>
                         </StackLayout>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>

@@ -27,7 +27,7 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <StackLayout Orientation="Vertical" Spacing="2">
-                            <Label Text="{Binding Room}" BackgroundColor="DarkTurquoise" TextColor="White"
+                            <Label Text="{Binding Room}" BackgroundColor="#24A3F6" TextColor="White"
                                    Margin="2,2,2,2" FontSize="Medium" 
                                    HorizontalTextAlignment="Center" />
                         </StackLayout>
